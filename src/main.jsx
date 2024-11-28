@@ -8,11 +8,13 @@ import {
 } from "react-router-dom";
 import AddCoffee from './components/AddCoffee.jsx';
 import UpdateCoffee from './components/UpdateCoffee.jsx';
+import Home from './components/Home.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App></App>
+    element: <Home></Home>,
+    loader: () => fetch('http://localhost:5000/addCoffee')
   },
   {
     path: "/addCoffee",
