@@ -1,4 +1,4 @@
-import swal from 'sweetalert';
+import Swal from 'sweetalert2';
 
 
 const AddCoffee = () => {
@@ -27,8 +27,8 @@ const AddCoffee = () => {
         .then(res => res.json())
         .then(data=>{
             console.log(data)
-            if(data.insertedID){
-                swal("Success!", "Coffee added successfully!", "success");
+            if(data.insertedId){
+                Swal.fire("Success!", "Coffee added successfully!", "success");
             }
         })
     }
