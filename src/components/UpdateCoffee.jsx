@@ -41,8 +41,8 @@ const UpdateCoffee = () => {
         console.log("fetch data for delete", data);
         if (data.modifiedCount > 0) {
           Swal.fire({
-            title: "Deleted!",
-            text: "Your file has been deleted.",
+            title: "Updated!",
+            text: "Your Coffee has been Updated.",
             icon: "success",
           });
         }
