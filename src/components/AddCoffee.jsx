@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 
@@ -37,12 +38,12 @@ const AddCoffee = () => {
       <div className="min-h-screen bg-gray-100 flex items-center justify-center">
         <div className="max-w-4xl w-full bg-white shadow-md rounded-lg p-8">
           {/* Back to Home */}
-          <a
-            href="#"
+          <Link
+           to='/'
             className="text-gray-600 hover:text-gray-800 text-lg font-medium mb-6 block"
           >
             &larr; Back to home
-          </a>
+          </Link>
 
           {/* Heading */}
           <h1 className="text-2xl font-bold text-center mb-2">
